@@ -1,9 +1,16 @@
 import './App.css';
+import Articles from './Articles';
+import Header from './Header';
+import Hero from './Hero';
 
 function App() {
   return (
     <div className="App">
-      News App Design
+      <Header />
+      <main>
+        <Hero />
+        <Articles />
+      </main>
     </div>
   );
 }
