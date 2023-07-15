@@ -24,7 +24,7 @@ const Container = styled.div`
 
   @media (max-width: 1440px) {
     flex-direction: column;
-    width: 100%;
+    width: 375px;
     margin-top: 0;
   }
 `;

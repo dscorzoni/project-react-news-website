@@ -21,7 +21,7 @@ const Container = styled.div`
   gap: 1.5rem;
 
   @media (max-width: 1440px) {
-    width: 100%;
+    width: 375px;
     flex-direction: column;
   }
 `;
