@@ -9,6 +9,7 @@ const ArticlesSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 
   @media (max-width: 1440px) {
     padding: 1rem;

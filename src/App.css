@@ -18,3 +18,9 @@
 body {
   background-color: var(--off-white);
 }
+
+@media (max-height: 400px) {
+  body {
+    height: 150vh;
+  }
+}
