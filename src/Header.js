@@ -31,7 +31,7 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 1200px) {
-    width: 375px;
+    max-width: 350px;
   }
 `;
 

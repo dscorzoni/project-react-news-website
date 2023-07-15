@@ -25,7 +25,7 @@ const Container = styled.div`
 
   @media (max-width: 1200px) {
     flex-direction: column;
-    width: 375px;
+    max-width: 350px;
     margin-top: 0;
   }
 `;
@@ -52,7 +52,7 @@ const ArticleItem = styled.article`
 
   h2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   p {
@@ -74,7 +74,7 @@ const ArticleItem = styled.article`
       font-size: 26px;
     }
     h2 {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 0;
     }
     p {
