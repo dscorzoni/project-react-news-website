@@ -11,19 +11,19 @@ const ArticlesSection = styled.section`
   align-items: center;
   margin-bottom: 2rem;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     padding: 1rem;
   }
 `;
 
 const Container = styled.div`
-  width: 1440px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-top: 4rem;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     width: 375px;
     margin-top: 0;
@@ -39,6 +39,9 @@ const ArticleItem = styled.article`
 
   div {
     padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   h1 {
@@ -49,14 +52,11 @@ const ArticleItem = styled.article`
 
   h2 {
     font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 1rem;
+    font-size: 20px;
   }
 
   p {
-    font-size: 20px;
     color: hsl(236, 13%, 42%);
-    line-height: 2rem;
   }
 
   a {
@@ -68,7 +68,7 @@ const ArticleItem = styled.article`
     color: hsl(5, 85%, 63%);
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     justify-content: space-around;
     h1 {
       font-size: 26px;

@@ -9,18 +9,18 @@ const HeroSection = styled.section`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     padding: 1rem;
   }
 `;
 
 const Container = styled.div`
-  width: 1440px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     width: 375px;
     flex-direction: column;
   }
@@ -32,20 +32,20 @@ const HeroDiv = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     flex: 1;
     flex-direction: column;
   }
 `;
 
 const HighlightsDiv = styled.div`
-  flex: 1;
+  flex: 1.1;
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1.5rem;
 
   h1 {
     font-size: 40px;
@@ -55,13 +55,12 @@ const HighlightsDiv = styled.div`
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 18px;
     color: hsl(233, 8%, 79%);
     line-height: 2rem;
   }
@@ -75,7 +74,7 @@ const HighlightsDiv = styled.div`
     color: hsl(35, 77%, 62%);
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     padding: 1.5rem;
     h2 {
       font-size: 20px;
@@ -89,10 +88,10 @@ const HighlightsDiv = styled.div`
 const HeroContentDiv = styled.div`
   margin: 1rem 0 1rem 0;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   h1 {
     flex: 1;
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 800;
   }
   div {
@@ -103,8 +102,9 @@ const HeroContentDiv = styled.div`
   }
   p {
     margin-top: 1rem;
-    font-size: 22px;
-    line-height: 2.5rem;
+    font-size: 17px;
+    line-height: 2rem;
+    color: hsl(236, 13%, 42%);
   }
   button {
     border: 0;
@@ -121,7 +121,7 @@ const HeroContentDiv = styled.div`
     background-color: hsl(240, 100%, 5%);
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     gap: 1rem;
     margin: 0;
@@ -149,7 +149,7 @@ const DividerDiv = styled.div`
   width: 100%;
   background-color: hsl(236, 13%, 42%);
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     margin: 2rem 0 2rem 0;
   }
 `;
@@ -194,7 +194,7 @@ const Hero = () => {
       <Container>
         <HeroDiv>
           <picture>
-            <source media="(max-width: 1440px)" srcSet={ImgWebMobile} />
+            <source media="(max-width: 1200px)" srcSet={ImgWebMobile} />
             <img src={ImgWebDesktop} alt="Colored blocks" />
           </picture>
           <HeroContentDiv>
