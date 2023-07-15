@@ -9,6 +9,10 @@ const ArticlesSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    padding: 1rem;
+  }
 `;
 
 const Container = styled.div`
@@ -17,6 +21,12 @@ const Container = styled.div`
   justify-content: space-between;
   gap: 2rem;
   margin-top: 4rem;
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
 `;
 
 const ArticleItem = styled.article`
@@ -55,6 +65,26 @@ const ArticleItem = styled.article`
 
   a:hover {
     color: hsl(5, 85%, 63%);
+  }
+
+  @media (max-width: 1440px) {
+    justify-content: space-around;
+    h1 {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 `;
 

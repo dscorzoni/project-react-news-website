@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ImgWebDesktop from "./assets/images/image-web-3-desktop.jpg";
+import ImgWebMobile from "./assets/images/image-web-3-mobile.jpg";
 
 /* Styled Components */
 const HeroSection = styled.section`
@@ -7,6 +8,10 @@ const HeroSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    padding: 1rem;
+  }
 `;
 
 const Container = styled.div`
@@ -14,12 +19,22 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const HeroDiv = styled.div`
   flex: 3;
   img {
     width: 100%;
+  }
+
+  @media (max-width: 1440px) {
+    flex: 1;
+    flex-direction: column;
   }
 `;
 
@@ -59,6 +74,16 @@ const HighlightsDiv = styled.div`
   a:hover {
     color: hsl(35, 77%, 62%);
   }
+
+  @media (max-width: 1440px) {
+    padding: 1.5rem;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 `;
 
 const HeroContentDiv = styled.div`
@@ -95,6 +120,26 @@ const HeroContentDiv = styled.div`
   button:hover {
     background-color: hsl(240, 100%, 5%);
   }
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5rem;
+    }
+    button {
+      font-size: 15px;
+      font-weight: 700;
+      width: 60%;
+      margin-top: 1rem;
+    }
+  }
 `;
 
 const DividerDiv = styled.div`
@@ -103,6 +148,10 @@ const DividerDiv = styled.div`
   height: 1px;
   width: 100%;
   background-color: hsl(236, 13%, 42%);
+
+  @media (max-width: 1440px) {
+    margin: 2rem 0 2rem 0;
+  }
 `;
 
 // Hero Component
@@ -144,7 +193,10 @@ const Hero = () => {
     <HeroSection>
       <Container>
         <HeroDiv>
-          <img src={ImgWebDesktop} alt="Colored blocks" />
+          <picture>
+            <source media="(max-width: 1440px)" srcSet={ImgWebMobile} />
+            <img src={ImgWebDesktop} alt="Colored blocks" />
+          </picture>
           <HeroContentDiv>
             <h1>{mainContent.title}</h1>
             <div>
